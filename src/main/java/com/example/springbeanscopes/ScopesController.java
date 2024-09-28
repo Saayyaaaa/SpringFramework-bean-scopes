@@ -37,7 +37,7 @@ public class ScopesController {
     @RequestMapping("/scopes/prototype")
     public String getPrototypeScopeMessage() {
         LOG.info("New prototype");
-        Person prototypePerson = personPrototype;  // Получаем новый экземпляр прототипа
+        Person prototypePerson = personPrototype;
         prototypePerson.setName("Prototype Person Name");
 
         LOG.info("Current Name: " + prototypePerson.getName());
